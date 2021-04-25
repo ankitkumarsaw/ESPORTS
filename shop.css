@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.fade-in{
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+    }
+    @keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#nav {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+}
+
+#nav::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+#logo {
+    margin: 2px 110px;
+}
+
+#logo img {
+    cursor: pointer;
+}
+
+#nav ul {
+    display: flex;
+}
+
+#nav ul li {
+    list-style-type: none;
+}
+
+#nav ul li a {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    display: block;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    letter-spacing: 1px;
+
+}
+
+.drop {
+    margin-top: 5px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(243, 44, 70, 0.5);
+    z-index: 1;
+    transition: all 1000ms;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content h2 {
+    color: #f32c46;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop:hover {
+    color: #f32c46;
+}
+
+.dropdown-content a:hover {
+    color: #f32c46;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+#ct {
+    padding-left: 100px;
+}
+
+#nav ul li button {
+    padding: 16px 12px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: white;
+    background-color: #f32c46;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+#nav ul li a:hover {
+    color: #f32c46;
+
+
+}
+
+#nav ul li button:hover {
+    padding: 18px 14px;
+    box-shadow: 0 4px 8px 0 rgba(243, 44, 70, 0.2), 0 6px 20px 0 rgba(243, 44, 70, 0.19);
+}
+
+#bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 720px;
+    margin-bottom: 100px;
+
+}
+
+#bg::before {
+    content: "";
+    position: absolute;
+    background: url('https://assets.website-files.com/60358955e12a8a2413b99edc/603810f50c0e56435c5367de_bg-blog-hero-esports-template.jpg') center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 2;
+
+}
+
+#bg h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 74px;
+    font-family: 'Chakra Petch', sans-serif;
+    padding-left: 150px;
+    letter-spacing: 1px;
+
+}
+
+#bg p {
+    padding-left: 150px;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 24px;
+}
+#bg2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+
+}
+
+#bg2 h1 {
+    text-align: center;
+    color: white;
+    font-size: 74px;
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    
+}
+#bg2 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+#bg2 ul li{
+    padding: 10px;
+    
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#bg2 li img{
+    height: 300px;
+    width: 300px;
+    transition: all 600ms;
+    opacity: 0.8;
+}
+#bg2  p, h4{
+    letter-spacing: 2px;
+    font-size: 24px;
+    color: #f32c46;
+    padding: 5px;
+    overflow: hidden;
+}
+#bg2 h4{
+    letter-spacing: 2px;
+    font-size: 24px;
+    color: white;
+    padding: 5px;
+    overflow: hidden;
+}
+
+#bg2 img:hover{
+    height: 310px;
+    width: 310px;
+    opacity: 2;
+}
+#ft {
+    display: flex;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+#ft1 p {
+    font-size: 17px;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+#ft2 {
+
+    margin-left: 200px;
+}
+
+#ft2 h2 {
+    color: #f32c46;
+}
+
+#ft2 a {
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 20;
+}
+
+#ft2 a:hover {
+    color: #f32c46;
+}
+
+#ft3 {
+
+    margin-left: 200px;
+}
+
+#ft3 h2 {
+    color: #f32c46;
+}
+
+#ft3 a {
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 20;
+}
+
+#ft3 a:hover {
+    color: #f32c46;
+}
+
+#cp {
+    font-size: 18px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 2px solid #f32c46;
+    margin-bottom: 40px;
+
+}
+
+#cp a {
+    text-decoration: none;
+    color: #f32c46;
+}
+
+#cp a:hover {
+    transition: all 250ms;
+    font-size: 19px;
+    text-decoration: underline;
+}

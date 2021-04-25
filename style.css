@@ -1,0 +1,464 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.fade-in{
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+    }
+    @keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+      0% {opacity:0;}
+      25%{opacity: 0.25;}
+      100%{opacity: 0.75;} 
+      100% {opacity:1;}
+    }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#nav {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+}
+
+#nav::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+#logo {
+    margin: 2px 110px;
+}
+
+#logo img {
+    cursor: pointer;
+}
+
+#nav ul {
+    display: flex;
+}
+
+#nav ul li {
+    list-style-type: none;
+}
+
+#nav ul li a {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    display: block;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    letter-spacing: 1px;
+
+}
+
+.drop {
+    margin-top: 5px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(243, 44, 70, 0.5);
+    z-index: 1;
+    transition: all 1000ms;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content h2 {
+    color: #f32c46;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop:hover {
+    color: #f32c46;
+}
+
+.dropdown-content a:hover {
+    color: #f32c46;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+#ct {
+    padding-left: 100px;
+}
+
+#nav ul li button {
+    padding: 16px 12px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: white;
+    background-color: #f32c46;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+#nav ul li a:hover {
+    color: #f32c46;
+
+
+}
+
+#nav ul li button:hover {
+    padding: 18px 14px;
+    box-shadow: 0 4px 8px 0 rgba(243, 44, 70, 0.2), 0 6px 20px 0 rgba(243, 44, 70, 0.19);
+}
+
+#bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 720px;
+    margin-bottom: 100px;
+
+}
+
+#bg::before {
+    content: "";
+    position: absolute;
+    background: url('https://assets.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template.jpg') center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 2;
+
+}
+
+#bg h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 74px;
+    font-family: 'Chakra Petch', sans-serif;
+    padding-left: 150px;
+    letter-spacing: 1px;
+
+}
+
+#bg p {
+    padding-left: 150px;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 24px;
+}
+
+#btn1 {
+    padding-left: 270px;
+
+}
+
+.btn {
+    margin: 30px;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 250ms;
+
+
+}
+
+.btn:hover {
+    padding: 22px;
+    box-shadow: 0 4px 8px 0 rgba(243, 44, 70, 0.5), 0 6px 20px 0 rgba(243, 44, 70, 0.5);
+    background-color: #f32c46;
+    border-color: #f32c46;
+}
+
+#bg2 {
+    margin: 0px 100px;
+    display: flex;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f32c46;
+
+}
+
+#bg2 p {
+    font-size: 24px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#bg2 ul {
+    padding-left: 50px;
+    list-style: none;
+    display: flex;
+}
+
+#bg2 li {
+    padding-left: 100px;
+}
+
+#bg3 {
+    text-align: center;
+    padding: 20px 150px;
+    margin-top: 50px;
+    color: white;
+
+
+}
+
+#bg3 h1 {
+    color: white;
+    font-size: 70px;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+#bg3 p {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+}
+
+#bg3-1 {
+    display: flex;
+    background: url("https://assets.website-files.com/60358955e12a8a2413b99edc/6035b2ae30dbf469741aa817_bg-match-esports-template.jpg") center center/cover;
+    height: 30%;
+    width: 100%;
+    margin-top: 60px;
+    opacity: 0.7;
+    transition: all 500ms;
+}
+
+.lf {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.rg {
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+#bg3-1 p {
+    font-size: 18px;
+}
+
+#bg3-1 h1 {
+    font-size: 28px;
+}
+
+#bg3-1:hover {
+    cursor: pointer;
+    opacity: 1;
+    margin-left: -50px;
+    
+
+}
+
+#bg3-2 {
+    display: flex;
+
+    background: url("https://assets.website-files.com/60358955e12a8a2413b99edc/60368030de90ac58344ddd8e_bg-2-match-esports-template.jpg") center center/cover;
+    height: 30%;
+    width: 100%;
+    margin-top: 30px;
+    opacity: 0.7;
+    transition: all 500ms;
+}
+
+#bg3-2 p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+}
+
+#bg3-2 h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 28px;
+}
+
+#bg3-2:hover {
+    cursor: pointer;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+#bg3-3 {
+    display: flex;
+    background: url("https://assets.website-files.com/60358955e12a8a2413b99edc/603680bdb944ca60ece542a5_bg-3-match-esports-template.jpg") center center/cover;
+    height: 30%;
+    width: 100%;
+    margin-top: 30px;
+    opacity: 0.7;
+    transition: all 500ms;
+}
+
+#bg3-3 p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+}
+
+#bg3-3 h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 28px;
+}
+
+#bg3-3:hover {
+    cursor: pointer;
+    opacity: 1;
+    margin-left: -50px;
+}
+#bg3 h2 {
+    font-size: 24px;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-top: 60px;
+}
+
+#ft {
+    display: flex;
+    color: white;
+    margin: 100px;
+}
+
+#ft1 p {
+    font-size: 17px;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+#ft2 {
+
+    margin-left: 200px;
+}
+
+#ft2 h2 {
+    color: #f32c46;
+}
+
+#ft2 a {
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 20;
+}
+
+#ft2 a:hover {
+    color: #f32c46;
+}
+
+#ft3 {
+
+    margin-left: 200px;
+}
+
+#ft3 h2 {
+    color: #f32c46;
+}
+
+#ft3 a {
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 20;
+}
+
+#ft3 a:hover {
+    color: #f32c46;
+}
+
+#cp {
+    font-size: 18px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 2px solid #f32c46;
+    margin-bottom: 40px;
+
+}
+
+#cp a {
+    text-decoration: none;
+    color: #f32c46;
+}
+
+#cp a:hover {
+    transition: all 250ms;
+    font-size: 19px;
+    text-decoration: underline;
+}
